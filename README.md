@@ -16,20 +16,35 @@ Data
 1. Data source: http://insideairbnb.com/
 2. Data describe: this data set contains almost 50 thousand airbnb listings in NYC.
 3. Data columns' explaination:
+
    id: listing id
+   
    name: name of the listing
+   
    host_id: host ID
+   
    host_name: name of the host
+   
    neighbourhood_group: Five major areas including Brooklyn, Manhattan, Queens, etc.
+   
    neighbourhood: some small arears in each neighbourhood_group
+   
    latitude: latitude coordinates
+   
    longtitude: longtitude coordinates
+   
    room_type: listing room type
+   
    price: price of each nyc airbnb rentals.
+   
    minmum_nights: amount of minmun nights have to booked.
+   
    last_review: the date that rental had been lastly review
+   
    review_per_month: the numver of review times per month
+   
    calculated host listing: amount of listing per host.
+   
    availability_365: number of days when room is availability for booking during the year
 --------
 
