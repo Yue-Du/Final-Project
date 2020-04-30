@@ -5,10 +5,13 @@ Airbnb is very popular choose among people on travelling. This project uses New 
 
 Project Organization
 ------------
-1. Data ingestion
-2. Exploratory data analysis and data visualization. (eg: bar plot, violin plot, scatter point polot, box plot)
-3. Data preprocess
-4. Build model and model evaluation (eg: linear regression model, logistic regression model, Gradient boosting regression)
+1. Main jupyter notebook is under the folder notebooks, named NYC_airbnb.ipynb
+2. sample data set is under the folder NYC_airbnb_data. There have two sample data, first one is raw data set named sample_raw_data.csv, second one is preprocessed data set named sample_preprocess_data.csv
+3. Jupyter notebook's structure is as following: 
+   <1>. Data ingestion
+   <2>. Exploratory data analysis and data visualization. (eg: bar plot, violin plot, scatter point polot, box plot)
+   <3>. Data preprocess
+   <4>. Build model and model evaluation (eg: linear regression model, logistic regression model, Gradient boosting regression)
 --------
 
 Data
