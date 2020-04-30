@@ -1,57 +1,41 @@
 NYC_airbnb_project
 ==============================
 
-A short description of the project.
+Airbnb is very popular choose among people on travelling. This project uses New York City's airbnb data, which contains almost 50 thousand airbnb listings in NYC, trying to explore the relationship between rentals price and their locations, between rentals availability and their locations and so on. I tried to use some visualization methods to demonstrate their relationships. And I also built some different regression models to predict the price of NYC Airbnb rentals and evaluate these models performences, according to their different features.
 
 Project Organization
 ------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
-
+1. Data ingestion
+2. Exploratory data analysis and data visualization. (eg: bar plot, violin plot, scatter point polot, box plot)
+3. Data preprocess
+4. Build model and model evaluation (eg: linear regression model, logistic regression model, Gradient boosting regression)
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+Data
+------------
+1. Data source: http://insideairbnb.com/
+2. Data describe: this data set contains almost 50 thousand airbnb listings in NYC.
+3. Data columns' explaination:
+   id: listing id
+   name: name of the listing
+   host_id: host ID
+   host_name: name of the host
+   neighbourhood_group: Five major areas including Brooklyn, Manhattan, Queens, etc.
+   neighbourhood: some small arears in each neighbourhood_group
+   latitude: latitude coordinates
+   longtitude: longtitude coordinates
+   room_type: listing room type
+   price: price of each nyc airbnb rentals.
+   minmum_nights: amount of minmun nights have to booked.
+   last_review: the date that rental had been lastly review
+   review_per_month: the numver of review times per month
+   calculated host listing: amount of listing per host.
+   availability_365: number of days when room is availability for booking during the year
+--------
+
+Reference
+------------
+1. https://www.kaggle.com/jrw2200/smart-pricing-with-xgb-rfr-interpretations
+--------
+
+"The work I submitted represents my work and my work alone.  I abode by the academic integrity policy and I am aware of the consequences associated with engaging in academic misconduct. "
